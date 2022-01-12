@@ -109,6 +109,36 @@
                                     <input type="file" name="avatar" id="avatar" class="form-control" />
                                 </div>
                             </div>
+                            <div class="mt-2 row">
+                                <label class="col-2" for="gioi_tinh_nam">
+                                    Giới tính
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <div class="col-10 row">
+                                    <div class="form-check col-2">
+                                        <input type="radio" class="form-check-input" name="gioi_tinh" id="gioi_tinh_nam" />
+                                        <label for="gioi_tinh_nam">Nam</label>
+                                    </div>
+                                    <div class="form-check col-2">
+                                        <input type="radio" class="form-check-input" name="gioi_tinh" id="gioi_tinh_nu" />
+                                        <label for="gioi_tinh_nu">Nữ</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 row">
+                                <label class="col-2" for="chuyen_nganh">
+                                    Chuyên ngành
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <div class="col-10">
+                                    <select class="form-select" name="chuyen_nganh" id="chuyen_nganh">
+                                        <option disabled selected>Chọn chuyên ngành</option>
+                                        <option value="udpm">Ứng dụng phần mềm</option>
+                                        <option value="tktw">Thiết kế trang web</option>
+                                        <option value="ltmt">Lập trình máy tính</option>
+                                    </select>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
