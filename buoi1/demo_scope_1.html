@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT16310 - Demo $scope 1</title>
+</head>
+<body ng-app="demo_scope_1">
+    <div ng-controller="my_controller1" style="background-color: aqua;">
+        {{ msg_1 }}
+    </div>
+
+    <div ng-controller="my_controller2" style="background-color: chartreuse;">
+        {{ msg_2 }}
+    </div>
+
+    <script src="js/angularjs.min.js"></script>
+    <script>
+        // B1: Tạo UD Angular
+        const app = angular.module("demo_scope_1", []);
+
+        // B2: Khai báo phạm vi hoạt động của UD AngularJs: ng-app
+        // B3: Tạo controller
+        function myController1($scope) {
+            $scope.msg_1 = "Hello World 1";
+        }
+
+        function myController2($scope) {
+            $scope.msg_2 = "Hello World 2";
+        }
+
+        // B4: Khai báo controller với UD AngularJs
+        app.controller("my_controller1", myController1);
+        app.controller("my_controller2", myController2);
+    </script>
+</body>
+</html>
