@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <header class="row">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="https://wowslider.com/sliders/demo-93/data1/images/lake.jpg" class="d-block w-100">
@@ -32,7 +32,7 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-            </div>
+            </div> -->
         </header>
         <nav class="row navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -210,7 +210,7 @@
                         </div>
                     </div>
 
-                    <div class="table-responsive collapse" id="tbl_sv">
+                    <div class="table-responsive" id="tbl_sv">
                         <table class="table table-striped text-nowrap">
                             <thead>
                                 <td>#</td>
@@ -231,7 +231,34 @@
                                         <button class="btn btn-primary">Sửa</button>
                                     </td>
                                     <td>
-                                        <button class="btn btn-danger">Xóa</button>
+                                        <button class="btn btn-danger"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#modal_delete_1">Xóa</button>
+                                        <div class="modal fade" id="modal_delete_1" tabindex="-1" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <form action="" method="">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel">
+                                                                Xác nhận xóa
+                                                            </h5>
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            Bạn muốn xóa sinh viên này?
+                                                            Thao tác này không thể phục hồi
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                                Đóng
+                                                            </button>
+                                                            <button type="button" class="btn btn-danger">Xóa</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
