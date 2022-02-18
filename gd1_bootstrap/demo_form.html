@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT16310</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container">
+        <header class="row bg-danger" style="height: 100px;"></header>
+        <nav class="row navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">IT16310</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#my-navbar" aria-controls="my-navbar"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="my-navbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Tài khoản
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+                                <li><a class="dropdown-item" href="#">Đăng ký</a></li>
+                                <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <span class="navbar-text p-2">
+                        Tiếng Việt
+                    </span>
+                    <span class="navbar-text p-2">
+                        English
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <div class="row mt-3">
+            <aside class="col-12 col-md-3 p-3">
+                <div class="card">
+                    <div class="card-header">Hãng điện thoại nổi bật</div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="#">Apple</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Samsung</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Nokia</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <article class="col-12 col-md-9 pt-3 pb-3">
+                <div class="container">
+                    <div class="row">
+                        <form action="" method="">
+                            <div class="mt-2 row">
+                                <label class="col-2" for="fullname">Họ tên</label>
+                                <div class="col-10">
+                                    <input type="text" name="fullname" id="fullname" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="mt-2 row">
+                                <label class="col-2" for="number">SĐT</label>
+                                <div class="col-10">
+                                    <input type="tel" name="number" id="number" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="mt-2 row">
+                                <label class="col-2" for="email">
+                                    Email
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <div class="col-10">
+                                    <input type="email" name="email" id="email" class="form-control" />
+                                    <small class="text-danger">Không đúng định dạng email FPT</small>
+                                </div>
+                            </div>
+                            <div class="mt-2 row">
+                                <label class="col-2" for="password">
+                                    Password
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <div class="col-10">
+                                    <input type="password" name="password" id="password" class="form-control" />
+                                    <small class="text-danger">Không được để trống</small>
+                                </div>
+                            </div>
+                            <div class="mt-2 row">
+                                <label class="col-2" for="avatar">Ảnh đại diện</label>
+                                <div class="col-10">
+                                    <input type="file" name="avatar" id="avatar" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="mt-2 row">
+                                <label class="col-2" for="gioi_tinh_nam">
+                                    Giới tính
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <div class="col-10 row">
+                                    <div class="form-check col-2">
+                                        <input type="radio" class="form-check-input" name="gioi_tinh" id="gioi_tinh_nam" />
+                                        <label for="gioi_tinh_nam">Nam</label>
+                                    </div>
+                                    <div class="form-check col-2">
+                                        <input type="radio" class="form-check-input" name="gioi_tinh" id="gioi_tinh_nu" />
+                                        <label for="gioi_tinh_nu">Nữ</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 row">
+                                <label class="col-2" for="chuyen_nganh">
+                                    Chuyên ngành
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <div class="col-10">
+                                    <select class="form-select" name="chuyen_nganh" id="chuyen_nganh">
+                                        <option disabled selected>Chọn chuyên ngành</option>
+                                        <option value="udpm">Ứng dụng phần mềm</option>
+                                        <option value="tktw">Thiết kế trang web</option>
+                                        <option value="ltmt">Lập trình máy tính</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <footer class="row bg-secondary text-center text-white p-2 mt-3">
+            <span>TienNH21</span>
+        </footer>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

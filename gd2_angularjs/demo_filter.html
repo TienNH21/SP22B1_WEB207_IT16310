@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT16310 - Demo Filter</title>
+</head>
+<body ng-app="demo_filter">
+    <div ng-controller="my_controller" style="font-size: 30px;">
+        <p>{{ my_number }}</p>
+        <p>{{ my_number | number : 4 }}</p>
+        <p>{{ my_number | currency : 'VNĐ' : 4 }}</p>
+
+        <p>{{ now }}</p>
+        <p>{{ now | date : 'dd/MM/yyyy HH:mm:ss' : '+09' }}</p>
+
+        <p>{{ name | uppercase }}</p>
+        <p>{{ name | lowercase }}</p>
+        <p>{{ sv | json }}</p>
+
+        <hr>
+        <ul>
+            <!-- limitTo : so_ptu : vi_tri_start -->
+            <li ng-repeat="item in arr | limitTo : 3 : 1">
+                {{ item.ma }} - {{ item.ten }}
+            </li>
+        </ul>
+
+        <hr>
+        <ul>
+            <!-- limitTo : so_ptu : vi_tri_start -->
+            <li ng-repeat="item in arr | orderBy : 'ma' ">
+                {{ item.ma }} - {{ item.ten }}
+            </li>
+        </ul>
+    </div>
+
+    <script src="js/angularjs.min.js"></script>
+    <script>
+        const app = angular.module("demo_filter", []);
+
+        function myController($scope) {
+            $scope.my_number = 123456789.987654321;
+            $scope.now = new Date();
+            $scope.name = "FPT Polytechnic";
+            $scope.sv = {
+                name: "Ng Van A",
+                chuyen_nganh: "UDPM",
+                gioi_tinh: 1,
+            };
+
+            $scope.arr = [
+                { ma: 'WEB207', ten: "Frontend Framework" },    // 0
+                { ma: 'SOF2041', ten: "Du an mau" },            // 1
+                { ma: 'MOB1014', ten: "Lap trinh Java 1" },     // 2
+                { ma: 'COM108', ten: "Nhap mon lap trinh" },    // 3
+                { ma: 'SOF203', ten: "Lap trinh Java 3" },      // 4
+                { ma: 'MOB1023', ten: "Lap trinh Java 2" },     // 5
+            ];
+        }
+
+        app.controller("my_controller", myController);
+    </script>
+</body>
+</html>

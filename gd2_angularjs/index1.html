@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT16310</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+<body>
+    <!--
+        Với màn hình mobile + tablet, 3 div nằm trong 3 dòng tách biệt
+        Với màn hình laptop vừa & nhỏ, div1 & div2 nằm cùng dòng với tỉ lệ 1:2
+        Còn lại, các màn hình từ 1200px trở lên, 3 div nằm trên cùng 1 dòng, tỉ lệ 1:4:1
+    -->
+    <!-- <div class="row" style="height: 200px;">
+        <div class="col-12 col-md-4  col-xl-2 bg-primary">Div1</div>
+        <div class="col-12 col-md-8  col-xl-8 bg-danger">Div2</div>
+        <div class="col-12 col-md-12 col-xl-2 bg-warning">Div3</div>
+    </div> -->
+
+    <div class="container">
+        <header class="row bg-danger" style="height: 100px;"></header>
+        <nav class="row navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">IT16310</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#my-navbar" aria-controls="my-navbar"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="my-navbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Tài khoản
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+                                <li><a class="dropdown-item" href="#">Đăng ký</a></li>
+                                <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <span class="navbar-text p-2">
+                        Tiếng Việt
+                    </span>
+                    <span class="navbar-text p-2">
+                        English
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <div class="row mt-3">
+            <aside class="col-12 col-md-3 bg-primary p-3">
+                <div class="card">
+                    <div class="card-header">Hãng điện thoại nổi bật</div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="#">Apple</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Samsung</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Nokia</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <article class="col-12 col-md-9 bg-info pt-3 pb-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4 pt-2">
+                            <div class="card">
+                                <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-12-family-select-2021?wid=940&hei=1112&fmt=jpeg&qlt=80&.v=1617135051000"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">iPhone 12</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Chi tiết sản phẩm</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 pt-2">
+                            <div class="card">
+                                <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-12-family-select-2021?wid=940&hei=1112&fmt=jpeg&qlt=80&.v=1617135051000"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">iPhone 12</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Chi tiết sản phẩm</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 pt-2">
+                            <div class="card">
+                                <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-12-family-select-2021?wid=940&hei=1112&fmt=jpeg&qlt=80&.v=1617135051000"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">iPhone 12</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Chi tiết sản phẩm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <footer class="row bg-secondary text-center text-white p-2 mt-3">
+            <span>TienNH21</span>
+        </footer>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
